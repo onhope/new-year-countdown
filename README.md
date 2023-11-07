@@ -45,7 +45,24 @@ p::before {
 
 <br>
 
-### 2. js : Date
+### 2. css : css 변수 
+변수를 선언해 두면 <u>유지보수</u>에 용이하다. 
+
+**CSS 변수 선언 및 호출**  
+CSS에서 변수의 이름을 지정할 때는 변수 맨 앞에 -- 를 붙여주어야 한다. 그리고 변수를 호출해 사용할 때는 var(변수명)형식을 사용한다.
+```
+:root {
+	--main-font-color: #000f22;  /* CSS 전역 변수 선언 */
+}
+
+div {
+	color: var(--main-font-color);   /* CSS 변수 사용 */
+}
+```
+
+<br>
+
+### 3. js : Date
 Date 객체를 사용하여 매 순간 변화하는 시간과 날짜에 관한 정보를 손 쉽게 얻을 수 있음  
 
 Date 객체를 활용하면 <u>생성 및 수정 시간을 저장하거나 시간을 측정할 수 있고, 현재 날짜를 출력하는 용도</u> 등으로도 활용할 수 있음  
@@ -86,7 +103,7 @@ alert( now ); // 현재 날짜 및 시간이 출력됨
 
 <br>
 
-### 3. js :setTimeout()  
+### 4. js :setTimeout()  
 일정 시간이 지난 후 정해진 코드를 실행하게 합니다.   
 
 ```
@@ -111,6 +128,10 @@ https://www.w3schools.com/
 
 **css : 가상요소**  
 https://hianna.tistory.com/726  
+
+
+**css : css 변수 선언**  
+https://inpa.tistory.com/entry/CSS-%F0%9F%93%9A-CSS%EC%9A%A9-%EB%B3%80%EC%88%98-variable-%EC%A0%95%EB%A6%AC
 
 **js : Date**  
 https://ko.javascript.info/date
